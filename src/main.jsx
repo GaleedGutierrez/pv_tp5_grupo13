@@ -1,17 +1,19 @@
-import './index.css';
-import '@ant-design/v5-patch-for-react-19';
-
+// import './index.css';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
-import App from './App.jsx';
+import { Provider } from '@/components/ui/provider';
+
+import { AppRouter } from './AppRouter.jsx';
 
 const ROOT = document.getElementById('root');
 
 if (ROOT instanceof HTMLDivElement) {
 	createRoot(ROOT).render(
 		<StrictMode>
-			<App />
+			<Provider>
+				<AppRouter />
+			</Provider>
 		</StrictMode>,
 	);
 }
