@@ -35,6 +35,7 @@
 			"@assets/*": ["./src/assets/*"],
 			"@components/*": ["./src/components/*"],
 			"@context/*": ["./src/context/*"],
+			"@constants/*": ["./src/constants/*"],
 			"@data/*": ["./src/data/*"],
 			"@domain/*": ["./src/domain/*"],
 			"@guard/*": ["./src/guard/*"],
