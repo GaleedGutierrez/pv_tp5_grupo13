@@ -16,10 +16,15 @@ const NotFoundPage = () => (
 			<Center
 				flexDirection="column"
 				gap={4}
-				height="90vh"
+				height="93.25vh"
 				verticalAlign="middle"
 			>
-				<Heading size="6xl">Ups! Página no encontrada</Heading>
+				<Heading
+					color="fg.error"
+					size="6xl"
+				>
+					Ups! Página no encontrada
+				</Heading>
 				<Text textStyle="2xl">
 					Lo sentimos, la página que estás buscando no existe.
 				</Text>
