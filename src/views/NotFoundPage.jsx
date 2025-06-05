@@ -1,5 +1,6 @@
-import { Button, Center, Heading, Text } from '@chakra-ui/react';
-import { Navbar } from '@components/NavBar';
+import { Button, Center, Grid, Heading, Text } from '@chakra-ui/react';
+import { Footer } from '@components/Footer';
+import { Header } from '@components/Header';
 import { Link, Navigate, Route, Routes } from 'react-router';
 
 /**
@@ -8,10 +9,11 @@ import { Link, Navigate, Route, Routes } from 'react-router';
  * @returns {import('react').JSX.Element} The rendered component with routes and a not found page.
  * */
 const NotFoundPage = () => (
-	<>
-		<header>
-			<Navbar />
-		</header>
+	<Grid
+		gridTemplateRows="auto 1fr auto"
+		height="100vh"
+	>
+		<Header />
 		<main>
 			<Center
 				flexDirection="column"
@@ -37,7 +39,8 @@ const NotFoundPage = () => (
 				</Button>
 			</Center>
 		</main>
-	</>
+		<Footer />
+	</Grid>
 );
 
 /**

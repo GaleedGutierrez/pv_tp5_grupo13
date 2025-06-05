@@ -2,11 +2,13 @@ import {
 	Button,
 	Center,
 	Flex,
+	Grid,
 	Heading,
 	Link as ChakraLink,
 	Text,
 } from '@chakra-ui/react';
-import { Navbar } from '@components/NavBar';
+import { Footer } from '@components/Footer';
+import { Header } from '@components/Header';
 import { AppRoutes } from '@models/routers.model';
 import { RiArrowRightLine } from 'react-icons/ri';
 import { Link } from 'react-router';
@@ -16,17 +18,15 @@ import { Link } from 'react-router';
  * @returns {import('react').JSX.Element} The rendered component with routes and a not found page.
  * */
 export const Home = () => (
-	<>
-		<header>
-			<Navbar />
-		</header>
+	<Grid
+		gridTemplateRows="auto 1fr auto"
+		height="100vh"
+	>
+		<Header />
 		<main>
 			<Center
-				// bgGradient="to-br"
 				flexDirection="column"
 				gap={4}
-				// gradientFrom="blue.50"
-				// gradientTo="blue.200"
 				height="93.25vh"
 				verticalAlign="middle"
 			>
@@ -67,5 +67,6 @@ export const Home = () => (
 				</Flex>
 			</Center>
 		</main>
-	</>
+		<Footer />
+	</Grid>
 );

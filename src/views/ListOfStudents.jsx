@@ -1,5 +1,6 @@
-import { Box, Table, Text } from '@chakra-ui/react';
-import { Navbar } from '@components/NavBar';
+import { Box, Grid, Table, Text } from '@chakra-ui/react';
+import { Footer } from '@components/Footer';
+import { Header } from '@components/Header';
 import { TablesTableRow } from '@components/TablesTableRow';
 import { useGlobalContext } from '@context/global.context';
 
@@ -11,10 +12,11 @@ export const ListOfStudents = () => {
 	const { students } = useGlobalContext();
 
 	return (
-		<>
-			<header>
-				<Navbar />
-			</header>
+		<Grid
+			gridTemplateRows="auto 1fr auto"
+			height="100vh"
+		>
+			<Header />
 			<main>
 				<Box
 					as="section"
@@ -67,6 +69,7 @@ export const ListOfStudents = () => {
 					</Table.Root>
 				</Box>
 			</main>
-		</>
+			<Footer />
+		</Grid>
 	);
 };

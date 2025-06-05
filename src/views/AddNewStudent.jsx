@@ -1,5 +1,6 @@
-import { Flex } from '@chakra-ui/react';
-import { Navbar } from '@components/NavBar';
+import { Flex, Grid } from '@chakra-ui/react';
+import { Footer } from '@components/Footer';
+import { Header } from '@components/Header';
 import { StudentForm } from '@components/StudentForm';
 
 /**
@@ -7,10 +8,11 @@ import { StudentForm } from '@components/StudentForm';
  * @returns {import('react').JSX.Element} The rendered component with a form to add a new student.
  */
 export const AddNewStudent = () => (
-	<>
-		<header>
-			<Navbar />
-		</header>
+	<Grid
+		gridTemplateRows="auto 1fr auto"
+		height="100vh"
+	>
+		<Header />
 		<main>
 			<Flex
 				borderRadius="0.5rem"
@@ -20,5 +22,6 @@ export const AddNewStudent = () => (
 				<StudentForm />
 			</Flex>
 		</main>
-	</>
+		<Footer />
+	</Grid>
 );

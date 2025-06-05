@@ -13,7 +13,6 @@ import {
 } from '@chakra-ui/react';
 import { Footer } from '@components/Footer';
 import { Header } from '@components/Header';
-import { Navbar } from '@components/NavBar';
 import { useGlobalContext } from '@context/global.context';
 import { getRandomColorPalette } from '@utils/getRandomColorPalette';
 import { Link, useParams } from 'react-router';
@@ -58,10 +57,11 @@ export const DetailsStudent = () => {
 	const COLOR_PALLETTE = getRandomColorPalette(name);
 
 	return (
-		<>
-			<header>
-				<Navbar />
-			</header>
+		<Grid
+			gridTemplateRows="auto 1fr auto"
+			height="100vh"
+		>
+			<Header />
 			<main>
 				<Flex
 					borderRadius="0.5rem"
@@ -127,6 +127,7 @@ export const DetailsStudent = () => {
 					</Card.Root>
 				</Flex>
 			</main>
-		</>
+			<Footer />
+		</Grid>
 	);
 };

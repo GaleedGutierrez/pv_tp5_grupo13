@@ -1,4 +1,10 @@
-import { Heading, Link as ChakraLink, Text, VStack } from '@chakra-ui/react';
+import {
+	Grid,
+	Heading,
+	Link as ChakraLink,
+	Text,
+	VStack,
+} from '@chakra-ui/react';
 import { Footer } from '@components/Footer';
 import { Header } from '@components/Header';
 import { RiGithubFill } from 'react-icons/ri';
@@ -9,7 +15,10 @@ import { Link } from 'react-router';
  * @returns {import('react').JSX.Element} The rendered component with project information.
  */
 export const About = () => (
-	<>
+	<Grid
+		gridTemplateRows="auto 1fr auto"
+		height="100vh"
+	>
 		<Header />
 		<main>
 			<VStack
@@ -144,5 +153,5 @@ export const About = () => (
 			</VStack>
 		</main>
 		<Footer />
-	</>
+	</Grid>
 );
