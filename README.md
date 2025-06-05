@@ -28,7 +28,7 @@ Ingeniería.
   (@Ezequiel12354s)
 - **[Axel Enrique Galeed Gutierrez](https://github.com/GaleedGutierrez)**
   (@GaleedGutierrez)
-- **[Enzo Isaías Condori](https://github.com/isaiahOZ)** (@isaiahOZ)
+- **[Enzo Isaías Condori](https://github.com/IsaiasCondori)** (@IsaiasCondori)
 - **[Franklin Fernando Alexander Vazquez](https://github.com/VasquezFranklin)**
   (@VasquezFranklin)
 
