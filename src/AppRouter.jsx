@@ -4,7 +4,9 @@ import { ListOfStudents } from '@views/ListOfStudents';
 import { RoutesWithNotFound } from '@views/NotFoundPage';
 import { BrowserRouter, Route } from 'react-router';
 
+import { About } from './views/About';
 import { AddNewStudent } from './views/AddNewStudent';
+import { DetailsStudent } from './views/DetailsStudent';
 import { UpdateStudent } from './views/UpdateStudent';
 
 /**
@@ -32,10 +34,14 @@ export const AppRouter = () => (
 				element={<UpdateStudent />}
 				path={AppRoutes.students.updateStudent}
 			/>
-			{/* <Route
-				element={<AddNewStudent />}
+			<Route
+				element={<DetailsStudent />}
 				path={AppRoutes.students.studentDetails}
-			/> */}
+			/>
+			<Route
+				element={<About />}
+				path={AppRoutes.teamDetails}
+			/>
 		</RoutesWithNotFound>
 	</BrowserRouter>
 );
