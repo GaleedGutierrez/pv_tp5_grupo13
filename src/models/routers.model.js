@@ -6,5 +6,5 @@ export const AppRoutes = {
 		addNewStudent: '/alumnos/nuevo',
 		updateStudent: '/alumnos/:alumnoId/editar',
 	},
-	teamDetails: '/about',
+	teamDetails: '/sobre-nosotros',
 };

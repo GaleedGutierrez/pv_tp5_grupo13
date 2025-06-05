@@ -177,7 +177,7 @@ src/
 /alumnos/nuevo                       # Agregar nuevo estudiante
 /alumnos/:alumnoId                   # Detalles del estudiante
 /alumnos/:alumnoId/editar            # Editar estudiante
-/about                               # Información del proyecto
+/sobre-nosotros                      # Información del proyecto
 /*                                   # Página 404 (cualquier ruta no encontrada)
 ```
 
