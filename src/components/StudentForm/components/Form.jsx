@@ -91,9 +91,10 @@ export const Form = ({ isEditing, onCancelForm, formRef, onSavedStudent }) => {
 			if (EDITING_STUDENT_INDEX !== -1) {
 				STUDENTS[EDITING_STUDENT_INDEX] = NEW_STUDENT;
 			}
+		} else {
+			STUDENTS.push(NEW_STUDENT);
 		}
 
-		STUDENTS.push(NEW_STUDENT);
 		setStudents(STUDENTS);
 		onSavedStudent(NEW_STUDENT);
 		formRef.current?.reset();
